@@ -1,4 +1,0 @@
-enum PieceColor {
-  black,
-  white,
-}
