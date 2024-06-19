@@ -11,41 +11,29 @@ final goRouter = GoRouter(
     GoRoute(
       path: '/',
       name: 'home',
-      pageBuilder: (context, state) {
-        return MaterialPage(
-          key: state.pageKey,
-          child: const HomePage(),
-        );
+      builder: (context, state) {
+        return const HomePage();
       },
     ),
     GoRoute(
       path: '/match',
       name: 'match',
-      pageBuilder: (context, state) {
-        return MaterialPage(
-          key: state.pageKey,
-          child: const MatchPage(),
-        );
+      builder: (context, state) {
+        return const MatchPage();
       },
     ),
     GoRoute(
       path: '/gacha',
       name: 'gacha',
-      pageBuilder: (context, state) {
-        return MaterialPage(
-          key: state.pageKey,
-          child: const GachaPage(),
-        );
+      builder: (context, state) {
+        return const GachaPage();
       },
     ),
     GoRoute(
       path: '/settings',
       name: 'settings',
-      pageBuilder: (context, state) {
-        return MaterialPage(
-          key: state.pageKey,
-          child: const SettingsPage(),
-        );
+      builder: (context, state) {
+        return const SettingsPage();
       },
     ),
   ],
